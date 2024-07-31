@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, blue, white);
+}
+/* Global tags */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 21, 65);
+    line-height: 1.2;
+}
+span{
+    font-size: .9rem;
+    color: rgb(45, 45, 46);
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(54, 54, 54);
+}
+/*End*/
+/* Navigation*/
+nav {
+    position:fixed;
+    width: 100%;
+    background-color: rgba(0, 16, 46, 0.3);
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15) ;
+    z-index: 1000;
+}
+nav img{
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li{
+    
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(45, 45, 46);
+    font-size: 20px;
+    font-weight:500;
+    transition: 0.3s  ease;
+}
+nav .navigation ul li a:hover{
+    color: rgb(0, 37, 94);
+    text-decoration: underline;
+}
+/* About */
+#About {
+    padding: 18vh 8vh 0 8vh; /* Adjusted padding */
+    display: flex;
+}
+
+#About img {
+    max-width: 450px; /* Changed width to max-width */
+    height: auto; /* Ensures aspect ratio is maintained */
+    border-radius: 50%; /* Adjusted border-radius */
+    align-self: flex-start;
+}
+
+#About .AboutMe {
+    padding: 6vh 8vh; /* Adjusted padding */
+}
+
+#About .pro-links img {
+    padding-top: 10vh;
+    width: 20px;
+    margin-right: 10px; /* Added margin for spacing */
+}
+#About h2 {
+    color: rgba(24, 0, 0, 0.856);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    padding-top: 4vh 3vh;
+}
+
+#About p {
+    padding-top: 4vh;
+    width: 90%;
+    line-height: 1.5;
+    color: rgb(44, 44, 44);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 600;
+}
+#About .btn {
+    margin-top: 30px;
+}
+
+#About a.blue:hover {
+    color: rgba(0, 0, 255, 0.815);
+    background: #ffffff70;
+}
+
+#About a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    background-color: rgba(0, 16, 46, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+}
+#About a.red:hover {
+    color: rgba(255, 0, 21, 0.815);
+    background: #ffffff70;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #292929;
+    color: white;
+    padding: .3rem .3rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer-about, .footer-links, .footer-social {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-container p, .footer-container a {
+    font-size: 1rem;
+    color: #b0c4de;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+.footer-container a:hover {
+    color: #c56161;
+    
+}
+
+/* Quick Links Vertical */
+.footer-links ul {
+    list-style: none;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center-aligns the links */
+}
+
+
+.footer-links ul li {
+    margin-bottom: 0.1rem;
+}
+
+.footer-links ul li a {
+    color: #486d9c;
+    font-size: 1rem;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain; /* Ensures the entire icon fits within the given dimensions */
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #d6d4d4;
+}
+#footer-container h2{
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
