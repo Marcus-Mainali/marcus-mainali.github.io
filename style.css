@@ -249,6 +249,13 @@ footer {
     font-size: 1rem;
 }
 
+.footer-social {
+    list-style: none;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center-aligns the links */
+}
 .footer-social a {
     display: inline-block;
     margin: 0 0.5rem;
